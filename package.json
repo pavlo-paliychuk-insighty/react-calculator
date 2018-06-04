@@ -1,8 +1,8 @@
 {
-  "name": "calculator",
+  "name": "react-calculator",
   "version": "0.1.0",
   "license": "MIT",
-  "homepage": "http://pavlo-paliychuk-insighty.github.io/calculator",
+  "homepage": "http://pavlo-paliychuk-insighty.github.io/react-calculator",
   "devDependencies": {
     "chai": "^4.1.2",
     "gh-pages": "^1.2.0",
