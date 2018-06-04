@@ -8,7 +8,7 @@ Created with *create-react-app*. See the [full create-react-app guide](https://g
 Try It
 ---
 
-[ahfarmer.github.io/calculator](https://ahfarmer.github.io/calculator/)
+[pavlo-paliychuk-insighty.github.io/calculator](https://ahfarmer.github.io/calculator/)
 
 
 
