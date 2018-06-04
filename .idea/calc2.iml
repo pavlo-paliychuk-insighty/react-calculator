@@ -15,5 +15,6 @@
     <orderEntry type="library" name="@types/react" level="application" />
     <orderEntry type="library" name="@types/react-native" level="application" />
     <orderEntry type="library" name="@types/big.js" level="application" />
+    <orderEntry type="library" name="@types/mathjs" level="application" />
   </component>
 </module>

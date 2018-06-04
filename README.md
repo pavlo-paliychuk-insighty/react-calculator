@@ -1,4 +1,4 @@
-[pavlo-paliychuk-insighty.github.io/calculator](https://ahfarmer.github.io/calculator/)
+[pavlo-paliychuk-insighty.github.io/calculator](https://pavlo-paliychuk-insighty.github.io/calculator/)
 
 
 
