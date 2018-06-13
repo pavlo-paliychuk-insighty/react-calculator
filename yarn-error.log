@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/bin/yarn deploy
+  /usr/local/bin/node /usr/local/bin/yarn start
 
 PATH: 
   /Users/pavlo/code/google-cloud-sdk/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin
@@ -27,7 +27,6 @@ npm manifest:
     },
     "dependencies": {
       "big.js": "^5.1.2",
-      "github-fork-ribbon-css": "^0.2.1",
       "mathjs": "^4.4.2",
       "prop-types": "^15.6.1",
       "react": "^16.4.0",
@@ -6975,7 +6974,7 @@ Trace:
   Error: Command failed.
   Exit code: 1
   Command: sh
-  Arguments: -c gh-pages -d build
+  Arguments: -c react-scripts start
   Directory: /Users/pavlo/code/calc2
   Output:
   

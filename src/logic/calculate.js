@@ -4,12 +4,50 @@ import operate from "./operate";
 import isNumber from "./isNumber";
 
 export default function calculate(obj, buttonName) {
+  console.log(buttonName);
   if (buttonName === "AC") {
     return {
       total: null,
       next: null,
       operation: null,
     };
+  }
+
+  if (buttonName === "log(2)") {
+    if (obj.next) {
+      return {
+        total: operate(null, obj.next, 'log(2)'),
+        next: null,
+        operation: null,
+      };
+    } if (obj.total && !obj.next) {
+      return {
+        total: operate(null, obj.total, 'log(2)'),
+        next: null,
+        operation: null,
+      };
+    } else {
+      return {};
+    }
+  }
+
+  if (buttonName === '1/x') {
+    if (obj.next) {
+      return {
+        total: operate(null, obj.next, '1/x'),
+        next: null,
+        operation: null,
+      };
+    }
+    if (obj.total && !obj.next) {
+      return {
+        total: operate(null, obj.total, '1/x'),
+        next: null,
+        operation: null,
+      };
+    } else {
+      return {};
+    }
   }
 
   if (isNumber(buttonName)) {
@@ -112,6 +150,61 @@ export default function calculate(obj, buttonName) {
       return {};
     }
   }
+  if (buttonName === "Pi") {
+    if (!obj.total) {
+      return {
+        total: (Math.PI).toString(),
+        next: null,
+        operation: null,
+      };
+    } if (obj.total) {
+      return {
+        total: obj.total,
+        next: (Math.PI).toString(),
+        operation: obj.operation,
+      };
+    } else {
+      return {};
+    }
+  }
+
+  if (buttonName === "e") {
+    if (!obj.total) {
+      return {
+        total: (Math.exp(1)).toString(),
+        next: null,
+        operation: null,
+      };
+    } if (obj.total) {
+      return {
+        total: obj.total,
+        next: (Math.exp(1)).toString(),
+        operation: obj.operation,
+      };
+    } else {
+      return {};
+    }
+  }
+
+  if (buttonName === 'e^x') {
+    if (obj.next) {
+      return {
+        total: operate(null, obj.next, 'e^x'),
+        next: null,
+        operation: null,
+      };
+    }
+    if (obj.total && !obj.next) {
+      return {
+        total: operate(null, obj.total, 'e^x'),
+        next: null,
+        operation: null,
+      };
+    } else {
+      return {};
+    }
+  }
+
   if (buttonName === "cos") {
     if (obj.next) {
       return {

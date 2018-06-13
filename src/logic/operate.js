@@ -40,13 +40,38 @@ export default function operate(numberOne, numberTwo, operation) {
     return (1 / Math.tan(two)).toString();
   }
   if (operation === "ln") {
+    if (numberTwo <= 0) {
+      alert('error');
+      return null
+    }
     return math.log(numberTwo).toString();
   }
+  if (operation === "log(2)") {
+    if (numberTwo <= 0) {
+      alert('error');
+      return null
+    }
+    return Math.log2(numberTwo).toString();
+  }
   if (operation === "log") {
+    if (numberTwo <= 0) {
+      alert('error');
+      return null
+    }
     return math.log(numberTwo, 10).toString();
   }
   if (operation === '^') {
     return (math.pow(numberOne, numberTwo)).toString();
+  }
+  if (operation === 'e^x') {
+    return (Math.exp(numberTwo)).toString();
+  }
+  if (operation === '1/x') {
+    if (numberTwo === '0') {
+      alert(`Division by zero is a no-no!`);
+      return null;
+    }
+    return (1 / numberTwo).toString();
   }
   if (operation === 'sqrtOfPower') {
     if (numberOne % 2 === 0 && numberOne < 0)  {

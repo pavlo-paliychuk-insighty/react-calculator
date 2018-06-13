@@ -19,6 +19,7 @@ class ButtonPanel extends React.Component {
           <Button name="÷" clickHandler={this.handleClick} orange />
           <Button name="sqrt" clickHandler={this.handleClick} orange />
           <Button name="sin" clickHandler={this.handleClick} orange />
+          <Button name="Pi" clickHandler={this.handleClick} orange />
         </div>
         <div>
           <Button name="7" clickHandler={this.handleClick} />
@@ -27,6 +28,7 @@ class ButtonPanel extends React.Component {
           <Button name="x" clickHandler={this.handleClick} orange />
           <Button name="x!" clickHandler={this.handleClick} orange />
           <Button name="cos" clickHandler={this.handleClick} orange />
+          <Button name="e" clickHandler={this.handleClick} orange />
         </div>
         <div>
           <Button name="4" clickHandler={this.handleClick} />
@@ -35,6 +37,7 @@ class ButtonPanel extends React.Component {
           <Button name="-" clickHandler={this.handleClick} orange />
           <Button name="ln" clickHandler={this.handleClick} orange />
           <Button name="tan" clickHandler={this.handleClick} orange />
+          <Button name="log(2)" clickHandler={this.handleClick} orange />
         </div>
         <div>
           <Button name="1" clickHandler={this.handleClick} />
@@ -43,6 +46,7 @@ class ButtonPanel extends React.Component {
           <Button name="+" clickHandler={this.handleClick} orange />
           <Button name="log" clickHandler={this.handleClick} orange />
           <Button name="cot" clickHandler={this.handleClick} orange />
+          <Button name="1/x" clickHandler={this.handleClick} orange />
         </div>
         <div>
           <Button name="0" clickHandler={this.handleClick} wide />
@@ -50,6 +54,7 @@ class ButtonPanel extends React.Component {
           <Button name="=" clickHandler={this.handleClick} orange />
           <Button name="sqrtOfPower" clickHandler={this.handleClick} orange />
           <Button name="^" clickHandler={this.handleClick} orange />
+          <Button name="e^x" clickHandler={this.handleClick} orange />
         </div>
       </div>
     );
